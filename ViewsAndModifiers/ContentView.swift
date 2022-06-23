@@ -11,18 +11,9 @@ struct ContentView: View {
     @State private var useRedText = false
     
     var body: some View {
-        VStack {
-            Text("Gryffindor")
-                .font(.largeTitle)
-                .background(.blue)
-            Text("Hufflepuff")
-            Text("Ravenclaw")
-            Text("Slytherin")
-        }
-        .font(.title)
-        .background(.red)
-        
-        
+        Text("Hello")
+            .padding()
+        Text("World")
     }
 }
 
