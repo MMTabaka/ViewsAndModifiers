@@ -11,15 +11,12 @@ struct Title: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.largeTitle)
-            .foregroundColor(.white)
-            .padding()
-            .background(.blue)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .foregroundColor(.blue)
     }
 }
 
 extension View {
-    func titleStyle() -> some View {
+    func prominentTitle() -> some View {
         modifier(Title())
     }
 }
@@ -27,7 +24,7 @@ extension View {
 struct ContentView: View {
     var body: some View {
         Text("Hello World")
-            .titleStyle()
+            .prominentTitle()
     }
 }
 
